@@ -1,0 +1,111 @@
+/* to bypass browser styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#product-overview {
+    background: url("freedom.jpg");
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+.plan{
+    background: #2DDF5C;
+    border: 1px solid black;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    /* to have the 3 blocks on same row */
+    display: inline-block;
+    /* for the 3 blocks to sit within one row - will take 30% of WHOLE page because no width limit on parent elements */
+    width: 30%;
+    box-sizing: border-box;
+    /* make sure that the middle is the SAME for all plans */
+    vertical-align: middle;
+}
+
+
+.section-title {
+    color: #2ddf5a;
+    font-family: inherit;
+    text-align: center
+}
+
+
+.main-header {
+    background: #2ddf5a;
+    padding: 15px 16px;
+    width: 100%;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    /* remove browser style for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    /* calc width - 100% - width of the brand-link div */
+    width: calc(100% - 64px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    /* reset style */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav__item a {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+    border: none;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b58;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b58;
+    background: white;
+}
