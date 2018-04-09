@@ -1,0 +1,78 @@
+main {
+    padding-top: 32px; 
+}
+
+.package {
+    border: 5px solid #0e4f1f;
+    background-color: #2ddf5a50;
+    border-left: none;
+    margin: 16px 0;
+    width: 80%;
+}
+
+.package:hover,
+.package:active {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    /* you could use !important to override the floated package because
+        it selector hashigher specificity (ID)  */
+    border-color: #ff1b58;
+}
+
+#plus {
+    background-color: #2ddf5ae1;
+}
+
+#free {
+    background-color: #2ddf5ab7;
+    float: right;
+    border-right: none;
+    border-left: 5px solid #0e4f1f;
+    text-align: right;
+}
+
+/* Clean solution for floated package */
+#free:hover,
+#free:active {
+    border-color: #ff1b58;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#premium {
+    background-color: #0e4f1f;
+}
+
+.package > a {
+    text-decoration: none;
+    color: inherit;
+    /* the full available space will be clickable */
+    display: block;
+    padding: 32px;
+}
+
+.package__title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#premium .package__title {
+    color: white;
+}
+
+#premium .package__subtitle {
+    color: #bbb;
+}
+
+.package__subtitle {
+    color: #979797;
+}
+
+.package__info {
+    background-color: white;
+    padding: 16px;
+    border: 1px solid #0e4f1f;
+    color: black;
+}
