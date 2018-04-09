@@ -104,11 +104,18 @@ body {
     cursor: pointer;
 }
 
+
 .button:hover,
 .button:active {
     background-color: white;
     color: #0e4f1f;
 }
+
+
+.button:focus {
+    outline: none;
+}
+
 
 .section-title {
     color: #23b949;
