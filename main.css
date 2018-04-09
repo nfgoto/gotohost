@@ -36,21 +36,17 @@ body {
     border-radius: 5px;
 }
 
-
 .plan__title {
     color: #0e4f1f;
 }
-
 
 .plan__price {
     color: rgb(120, 46, 139)
 }
 
-
 .plan--higkighted .plan__title {
     color: white;
 }
-
 
 .plan--higkighted .plan__price {
     color: #0e4f1f;
@@ -58,14 +54,12 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-
 .plan--higkighted {
     background-color: rgb(6, 187, 6);
     color: white;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
 
 .plan__badge {
     background-color: white;
@@ -76,24 +70,20 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-
 .plan__features {
     list-style: none;
     padding: 0;
     margin: 15px 0;
 }
 
-
 .plan__feature {
     margin: 9px 0;
 }
-
 
 .button {
     background-color: #0e4f1f;
     color: white;
     /* get rid of browser default styles for buttons */
-    
     /* inherit page font */
     font: inherit;
     /* make border same color as background */
@@ -104,18 +94,56 @@ body {
     cursor: pointer;
 }
 
-
 .button:hover,
 .button:active {
     background-color: white;
     color: #0e4f1f;
 }
 
-
 .button:focus {
     outline: none;
 }
 
+#key-features {
+    background-color: #ff1b58;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+.key-features__list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    background-color: #ffcede;
+    border: 2px solid #424242;
+    /* to get a perfect circle the height must match the width */
+    width: 128px;
+    height: 128px;    
+    border-radius: 50%;
+    /* auto will fill the space to te left and right to center HORIZONTALLY */
+    margin: auto;
+}
+
+.key-feature__description {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
 
 .section-title {
     color: #23b949;
@@ -123,19 +151,16 @@ body {
     text-align: center
 }
 
-
 .main-header {
     background: #2ddf5a;
     padding: 15px 16px;
     width: 100%;
 }
 
-
 .main-header>div {
     display: inline-block;
     vertical-align: middle;
 }
-
 
 .main-header__brand {
     color: #0e4f1f;
@@ -143,7 +168,6 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 .main-nav {
     display: inline-block;
@@ -153,7 +177,6 @@ body {
     vertical-align: middle;
 }
 
-
 .main-nav__items {
     /* reset style */
     margin: 0;
@@ -161,12 +184,10 @@ body {
     list-style: none;
 }
 
-
 .main-nav__item {
     display: inline-block;
     margin: 0 15px;
 }
-
 
 .main-nav__item a {
     color: #0e4f1f;
@@ -175,7 +196,6 @@ body {
     padding: 3px 0;
 }
 
-
 .main-nav__item a:hover,
 .main-nav__item a:active {
     color: white;
@@ -183,14 +203,12 @@ body {
     border: none;
 }
 
-
 .main-nav__item--cta a {
     color: white;
     background: #ff1b58;
     padding: 8px 16px;
     border-radius: 8px;
 }
-
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
