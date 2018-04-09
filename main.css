@@ -80,7 +80,7 @@ body {
 .plan__features {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 15px 0;
 }
 
 
@@ -88,6 +88,27 @@ body {
     margin: 9px 0;
 }
 
+
+.button {
+    background-color: #0e4f1f;
+    color: white;
+    /* get rid of browser default styles for buttons */
+    
+    /* inherit page font */
+    font: inherit;
+    /* make border same color as background */
+    border: 1px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #0e4f1f;
+}
 
 .section-title {
     color: #23b949;
